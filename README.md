@@ -4,6 +4,10 @@ This is a Vaadin Java component which wraps the html5-qrcode Javascript library 
 
 [html5-qrcode](https://github.com/mebjas/html5-qrcode)
 
+Note the decoder used for the QR code reading is from :
+
+[Zxing-js](https://github.com/zxing-js/library)
+
 Refer to the following blog for a full description:
 
 [HTML5 QR Code scanner](https://blog.minhazav.dev/research/html5-qrcode)
@@ -14,6 +18,6 @@ Some effort was expended in attempting to package it in the form of a Lit Templa
 
 I hope this component is of use to other Vaadin developers.  Note I have only fully evaluated this on the following configuration:
 
-    Vaadin 23.0.7, Java 17 and SpringBoot 2.6.7
+    html5-qrcode 2.2.1, Vaadin 23.0.7, Java 17 and SpringBoot 2.6.7
 
 and no guarantees (or support) can be offered for other configurations.
