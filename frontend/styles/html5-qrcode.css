@@ -1,0 +1,46 @@
+button {
+    --lumo-button-size: var(--lumo-size-m);
+
+    min-width: calc(var(--lumo-button-size) * 2);
+    height: var(--lumo-button-size);
+    padding: 0 calc(var(--lumo-button-size) / 3 + var(--lumo-border-radius-m) / 2);
+    margin: var(--lumo-space-xs) 0;
+    box-sizing: border-box;
+
+    font-family: var(--lumo-font-family);
+    font-size: var(--lumo-font-size-m);
+    font-weight: 500;
+
+    color: var(--_lumo-button-color, var(--lumo-primary-text-color));
+    background-color: var(--_lumo-button-background-color, var(--lumo-contrast-5pct));
+
+    border-radius: var(--lumo-border-radius-m);
+    border-width: 0px;
+    border-style: none;
+    border-color: var(--_lumo-button-background-color, var(--lumo-contrast-5pct));
+}
+
+select {
+    --lumo-text-field-size: var(--lumo-size-m);
+    --_lumo-selected-item-height: var(--lumo-size-m);
+    --_lumo-selected-item-padding: 0.5em;
+
+    padding: var(--lumo-space-xs) 0;
+    align-items: center;
+    min-height: var(--lumo-size-m);
+    outline: none;
+    box-sizing: border-box;
+
+    font-family: var(--lumo-font-family);
+    font-size: var(--lumo-font-size-m);
+    font-weight: 500;
+
+    color: var(--lumo-body-text-color);
+    background-color: var(--lumo-contrast-10pct);
+
+    border-radius: var(--lumo-border-radius-m);
+    border-width: 0px;
+    border-style: none;
+    border-color: var(--_lumo-button-background-color, var(--lumo-contrast-5pct));
+    border-image: initial;
+}
