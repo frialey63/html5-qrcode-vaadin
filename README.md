@@ -16,8 +16,8 @@ This add-on was developed because the existing QR code add-ons in the Vaadin dir
 
 Some effort was expended in attempting to package it in the form of a Lit Template in conjunction with an npm package, as a more natural package format.  However, this failed due to the scanner not initialising in the view although it appeared to be present in the page (confirmed using Chrome Developer tools).  The problem seemed to be similar to those encountered while testing other Vaadin QR add-ons.
 
-I hope this component is of use to other Vaadin developers.  Note I have only fully evaluated this on the following configuration:
+I hope this component is of use to other Vaadin developers.  Note I have only fully evaluated this component on the following configuration:
 
     html5-qrcode 2.2.1, Vaadin 23.0.7, Java 17 and SpringBoot 2.6.7
 
-and no guarantees (or support) can be offered for other configurations.
+and no guarantees (or support) can be offered for other configurations.  My smartphone is a Motorola G7 Play running Android 10.
