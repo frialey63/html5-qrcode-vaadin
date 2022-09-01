@@ -15,7 +15,7 @@ import com.vaadin.flow.component.html.Div;
  * @author Paul
  *
  */
-@CssImport("./styles/html5-qrcode.css")
+@CssImport("./my-styles/html5-qrcode.css")
 @JavaScript("https://unpkg.com/html5-qrcode")
 public class Html5Qrcode extends Div {
 
