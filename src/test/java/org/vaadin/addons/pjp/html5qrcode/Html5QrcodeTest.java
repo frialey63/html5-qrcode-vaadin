@@ -1,4 +1,4 @@
-package org.vaadin.addon.html5qrcode;
+package org.vaadin.addons.pjp.html5qrcode;
 
 import static org.junit.Assert.assertEquals;
 
@@ -6,7 +6,7 @@ import java.util.Map;
 import java.util.TreeMap;
 
 import org.junit.Test;
-import org.vaadin.addon.html5qrcode.Html5Qrcode.Option;
+import org.vaadin.addons.pjp.html5qrcode.Html5Qrcode.Option;
 
 /**
  * Test cases for Html5Qrcode in JUnit4.

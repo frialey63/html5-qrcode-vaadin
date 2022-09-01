@@ -1,11 +1,11 @@
-package org.vaadin.example.addon;
+package org.vaadin.example.addons.pjp;
 
 import java.util.HashMap;
 import java.util.Map;
 import java.util.logging.Logger;
 
-import org.vaadin.addon.html5qrcode.Html5Qrcode;
-import org.vaadin.addon.html5qrcode.Html5Qrcode.Option;
+import org.vaadin.addons.pjp.html5qrcode.Html5Qrcode;
+import org.vaadin.addons.pjp.html5qrcode.Html5Qrcode.Option;
 
 import com.vaadin.flow.component.orderedlayout.VerticalLayout;
 import com.vaadin.flow.router.Route;
