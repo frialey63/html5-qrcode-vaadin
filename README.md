@@ -1,46 +1,19 @@
-# Vaadin Add-on example project
+# Vaadin HTML5 QR Code Add-on
 
-An empty project for creating a Vaadin add-on. You should start from this project if your add-on's components are based on the existing Vaadin classes or doesn't use 3rd party JavaScript modules. For creating a wrapper for a JS module you might want to use the [Component Starter](https://github.com/vaadin/component-starter-flow) repository as a template instead.
+This is a Vaadin Java component which wraps the html5-qrcode Javascript library derived from the project at:
 
-## Development instructions
+[html5-qrcode](https://github.com/mebjas/html5-qrcode)
 
-### Important Files 
-* TheAddon.java: this is the addon-on component class. You can add more classes if you wish, including other Components.
-* TestView.java: A View class that let's you test the component you are building. This and other classes in the test folder will not be packaged during the build. You can add more test view classes in this package.
-* assembly/: this folder includes configuration for packaging the project into a JAR so that it works well with other Vaadin projects and the Vaadin Directory. There is usually no need to modify these files, unless you need to add JAR manifest entries.
+Refer to the following blog for a full description:
 
-If you are using static resources such as images, JS (e.g. templates) and CSS files the correct location for them is under the `/src/main/resources/META-INF/resources/frontend` directory and is described here [Resource Cheat Sheet](https://vaadin.com/docs/v14/flow/importing-dependencies/tutorial-ways-of-importing.html#resource-cheat-sheet)in more details. 
+[HTML5 QR Code scanner](https://blog.minhazav.dev/research/html5-qrcode)
 
-### Deployment
+This add-on was developed because the existing QR code add-ons in the Vaadin directory (e.g ZXingVaadin) were found to be non-functional under Vaadin 23.
 
-Starting the test/demo server:
-```
-mvn jetty:run
-```
+Some effort was expended in attempting to package it in the form of a Lit Template in conjunction with an npm package, as a more natural package format.  However, this failed due to the scanner not initialising in the view although it appeared to be present in the page (confirmed using Chrome Developer tools).  The problem seemed to be similar to those encountered while testing other Vaadin QR add-ons.
 
-This deploys demo at http://localhost:8080
- 
-### Integration test
+I hope this component is of use to other Vaadin developers.  Note I have only fully evaluated this on the following configuration:
 
-To run Integration Tests, execute `mvn verify -Pit,production`.
+    Vaadin 23.0.7, Java 17 and SpringBoot 2.6.7
 
-## Publishing to Vaadin Directory
-
-You should change the `organisation.name` property in `pom.xml` to your own name/organization.
-
-```
-    <organization>
-        <name>###author###</name>
-    </organization>
-```
-
-You can create the zip package needed for [Vaadin Directory](https://vaadin.com/directory/) using
-
-```
-mvn versions:set -DnewVersion=1.0.0 # You cannot publish snapshot versions 
-mvn install -Pdirectory
-```
-
-The package is created as `target/{project-name}-1.0.0.zip`
-
-For more information or to upload the package, visit https://vaadin.com/directory/my-components?uploadNewComponent
+and no guarantees (or support) can be offered for other configurations.

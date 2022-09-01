@@ -26,7 +26,7 @@ public class Html5Qrcode extends Div {
      */
     public enum Option {
           /**
-           * Array of formats to support of type {@type Html5QrcodeSupportedFormats}.
+           * Array of formats to support of type {@code Html5QrcodeSupportedFormats}.
            */
         formatsToSupport,
           /**
@@ -46,18 +46,18 @@ public class Html5Qrcode extends Div {
            * This would make the scanner look like this:
            *          ----------------------
            *          |********************|
-           *          |******,,,,,,,,,*****|      <--- shaded region
-           *          |******|       |*****|      <--- non shaded region would be
+           *          |******,,,,,,,,,*****|      --- shaded region
+           *          |******|       |*****|      --- non shaded region would be
            *          |******|       |*****|          used for QR code scanning.
            *          |******|_______|*****|
            *          |********************|
            *          |********************|
            *          ----------------------
            *
-           * Instance of {@interface QrDimensions} can be passed to construct a non
+           * Instance of {@code QrDimensions} can be passed to construct a non
            * square rendering of scanner box. You can also pass in a function of type
-           * {@type QrDimensionFunction} that takes in the width and height of the
-           * video stream and return QR box size of type {@interface QrDimensions}.
+           * {@code QrDimensionFunction} that takes in the width and height of the
+           * video stream and return QR box size of type {@code QrDimensions}.
            *
            * If this value is not set, no shaded QR box will be rendered and the scanner
            * will scan the entire area of video stream.
@@ -76,7 +76,7 @@ public class Html5Qrcode extends Div {
            */
         disableFlip,
           /**
-           * Optional, @beta(this config is not well supported yet).
+           * Optional, (this config is not well supported yet).
            *
            * Important: When passed this will override other parameters like
            * 'cameraIdOrConfig' or configurations like 'aspectRatio'.
