@@ -1,4 +1,4 @@
-package org.vaadin.addons.html5qrcode;
+package org.vaadin.addon.html5qrcode;
 
 import java.util.Map;
 import java.util.Map.Entry;
